@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 50px;
+  padding: 50px;
+}
+
+section .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+section .head .title {
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+section .head .title h3 {
+  font-size: 28px;
+  color: rgb(77, 74, 74);
+  padding-right: 12px;
+}
+
+section .head .title p {
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+section .head .icons ul {
+  display: flex;
+  list-style: none;
+  padding-right: 12px;
+  padding-top: 10px;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+}
+
+section .body {
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+section .body h4 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+section .body .box {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid lightgray;
+  margin-bottom: 20px;
+}
+
+section .body .box .complete {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 20px;
+}
+
+section .body .box .complete p.bigTxt {
+  font-size: 25px;
+}
+
+section .body .box .complete p span {
+  color: rgb(228, 114, 7);
+}
+
+section .body .box .membership ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 30px;
+}
+
+section .body .box .membership ul li {
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+section .body .box .membership ul li:first-child {
+  font-weight: bold;
+}
+
+section .body .box .membership ul li.space {
+  margin-right: 150px;
+}
+
+section .body .box .membership ul hr {
+  margin-right: 20px;
+}
+
+section .body .btn {
+  text-align: center;
+  margin: 20px;
+}
+
+section .body .btn button {
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 1px black;
+  cursor: pointer;
+}
+
+section .body .btn button.redBtn {
+  padding: 5px;
+  color: white;
+  background-color: #dd0330;
+  margin-right: 10px;
+}
+
+section .paid h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+section .paid .paidMember {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dd0330;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section .paid .paidMember .paidMemberBack {
+  font-size: 14px;
+  background-color: rgb(158, 5, 5);
+}
+
+section .paid .paidContents {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+section .paid .paidContents img {
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+section .paid .paidContents ul {
+  margin-left: 10px;
+  font-size: 15px;
+}

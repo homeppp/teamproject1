@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 50px;
+  padding: 50px;
+}
+
+section .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+section .head .title {
+  display: flex;
+  flex: 2;
+}
+
+section .head .title h3 {
+  font-size: 28px;
+  color: rgb(77, 74, 74);
+  padding-right: 12px;
+}
+
+section .head .title p {
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+section .head .icons ul {
+  display: flex;
+  list-style: none;
+  padding-right: 12px;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+section .head .icons ul li {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+section .head .icons ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+section .head .icons ul li a.home img {
+  padding-top: 3px;
+}
+
+section .head .icons ul li span {
+  padding-right: 30px;
+}
+
+section .head .icons ul li span.join1 {
+  padding-right: 20px;
+}
+
+section .head .icons ul li span.join2 {
+  padding-right: 20px;
+  color: #dd0330;
+  text-decoration: underline;
+}
+
+section .body {
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+section .body .agreement h4 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+section .body .agreement .contents {
+  display: flex;
+  border: 5px solid #dfdfdf;
+  padding: 20px;
+}
+
+section .body .agreement .contents i {
+  padding-top: 3px;
+}
+
+section .body .agreement .contents p {
+  padding-left: 5px;
+}
+
+section .body .agreement .contents p span {
+  color: rgb(201, 21, 21);
+}
+
+section .body .terms {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+section .body .terms .termsTitle {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+section .body .terms .termsTitle i {
+  margin-top: 3px;
+  color: #dd0330;
+  padding-right: 5px;
+}
+
+section .body .terms .termsTitle h4 {
+  color: #dd0330;
+}
+
+section .body .terms .termsContents {
+  border: 1px solid lightgray;
+  background-color: rgb(247, 245, 245);
+  padding: 20px 15px;
+  margin-bottom: 15px;
+  width: auto;
+  height: 200px;
+  overflow: auto;
+}
+
+section .body .terms .termsContents h4 {
+  padding-bottom: 10px;
+}
+
+section .body .terms .termsContents h4 i {
+  font-size: 1px;
+  padding-right: 10px;
+}
+
+section .body .terms .termsContents p {
+  padding-left: 20px;
+}
+
+section .body .terms .termsBtn {
+  text-align: end;
+}
+
+section .body .terms .termsBtn span {
+  font-weight: bold;
+  padding-left: 7px;
+}
+
+section .body .terms .termsBtn p {
+  font-size: 14px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+section .body .personalInfo {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+section .body .personalInfo .infoTitle {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+section .body .personalInfo .infoTitle i {
+  margin-top: 3px;
+  color: #dd0330;
+  padding-right: 5px;
+}
+
+section .body .personalInfo .infoTitle h4 {
+  color: #dd0330;
+}
+
+section .body .personalInfo .infoContents {
+  border: 1px solid lightgray;
+  background-color: rgb(247, 245, 245);
+  padding: 20px 15px;
+  margin-bottom: 15px;
+  width: auto;
+  height: 200px;
+  overflow: auto;
+}
+
+section .body .personalInfo .infoContents h4 {
+  padding-bottom: 10px;
+}
+
+section .body .personalInfo .infoContents h4 i {
+  font-size: 1px;
+  padding-right: 10px;
+}
+
+section .body .personalInfo .infoContents p {
+  padding-left: 20px;
+}
+
+section .body .personalInfo .termsBtn {
+  text-align: end;
+}
+
+section .body .personalInfo .termsBtn span {
+  font-weight: bold;
+  padding-left: 7px;
+}
+
+section .body .personalInfo .termsBtn p {
+  font-size: 14px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+section .body .allAgree {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+section .confirm {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+section .confirm input {
+  margin-right: 5px;
+}
+
+section .confirm a button {
+  padding: 6px 10px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 1px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}

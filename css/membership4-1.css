@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 50px;
+  padding: 50px;
+}
+
+section .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+section .head .title {
+  display: flex;
+}
+
+section .head .title h3 {
+  font-size: 28px;
+  color: rgb(77, 74, 74);
+  padding-right: 12px;
+}
+
+section .head .title p {
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 18px;
+}
+
+section .head .icons ul {
+  display: flex;
+  list-style: none;
+  padding-top: 10px;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+}
+
+section .head .icons ul li {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+section .head .icons ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+section .head .icons ul li a.home img {
+  padding-top: 3px;
+}
+
+section .head .icons ul li span {
+  padding-right: 30px;
+}
+
+section .head .icons ul li span.join1 {
+  padding-right: 20px;
+}
+
+section .head .icons ul li span.join2 {
+  padding-right: 5px;
+  color: #dd0330;
+  text-decoration: underline;
+}
+
+section .infoInput table {
+  width: 100%;
+  height: auto;
+  border-top: 3px solid red;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section .infoInput tr td {
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
+}
+
+section .infoInput tr td.box {
+  background-color: rgb(245, 245, 245);
+  border-left: none;
+  width: 180px;
+}
+
+section .infoInput tr td.box2 {
+  border-right: none;
+}
+
+section .infoInput tr td.box2 form button {
+  background-color: white;
+  padding: 2px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+section .infoInput tr td.box2 form p {
+  font-size: 10px;
+}
+
+section .infoInput tr td.box2 form p.inline {
+  display: inline;
+  font-size: 14px;
+}
+
+section .infoInput tr td.box2 form p span {
+  color: rgb(207, 135, 1);
+  font-weight: bold;
+}
+
+section .infoInput tr td.box span {
+  color: rgb(235, 88, 30);
+  padding-left: 10px;
+}
+
+section .infoInput tr td form {
+  padding-left: 10px;
+}
+
+section .infoInput tr td form input {
+  font-size: 20px;
+  width: 150px;
+  height: 25px;
+}
+
+section .infoInput tr td form input#user-name {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid black;
+}
+
+section .infoInput tr td form input#birth1 {
+  width: 100px;
+}
+
+section .infoInput tr td form input#birth2 {
+  width: 80px;
+}
+
+section .infoInput tr td form input#birth3 {
+  width: 80px;
+}
+
+section .infoInput tr td form select#tel1 {
+  width: 100px;
+  height: 25px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+section .infoInput tr td form input#tel2 {
+  width: 80px;
+}
+
+section .infoInput tr td form input#tel3 {
+  width: 80px;
+}
+
+section .confirm {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+section .confirm button {
+  border: 0;
+  outline: 0;
+  background-color: white;
+  margin-right: 3px;
+}
+
+section .confirm a button {
+  padding: 6px 10px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 1px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}

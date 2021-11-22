@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 50px;
+  padding: 50px;
+}
+
+section .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+section .head .title {
+  display: flex;
+}
+
+section .head .title h3 {
+  font-size: 28px;
+  color: rgb(77, 74, 74);
+  padding-right: 12px;
+}
+
+section .head .title p {
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+section .head .icons ul {
+  display: flex;
+  list-style: none;
+  padding-right: 12px;
+  padding-top: 10px;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+}
+
+section .head .icons ul li {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+section .head .icons ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+section .head .icons ul li a.home img {
+  padding-top: 3px;
+}
+
+section .head .icons ul li span {
+  padding-right: 30px;
+}
+
+section .head .icons ul li span.join1 {
+  padding-right: 20px;
+}
+
+section .head .icons ul li span.join2 {
+  padding-right: 20px;
+  color: #dd0330;
+  text-decoration: underline;
+}
+
+section .join {
+  border: 5px solid lightgray;
+  padding: 50px 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+section .join ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+section .join ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .join ul li img {
+  margin-bottom: 10px;
+}
+
+section .join ul li input {
+  margin-bottom: 5px;
+}
+
+section .join ul li label {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+section .join ul li span.smallTxt {
+  font-size: 12px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+section .text {
+  font-size: 12px;
+  color: rgb(117, 117, 117);
+  margin-bottom: 20px;
+}
+
+section .confirm {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+section .confirm input {
+  margin-right: 5px;
+}
+
+section .confirm a button {
+  padding: 6px 10px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 1px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
