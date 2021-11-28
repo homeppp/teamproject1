@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 50px;
+  padding: 50px;
+}
+
+section hr {
+  border-top: 1px solid rgb(245, 245, 245);
+}
+
+section .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+section .head .title {
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+section .head .title h3 {
+  font-size: 28px;
+  color: rgb(77, 74, 74);
+  padding-right: 12px;
+}
+
+section .head .title p {
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+section .head .icons ul {
+  display: flex;
+  list-style: none;
+  padding-right: 12px;
+  padding-top: 10px;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+}
+
+section .head .icons ul li {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+section .head .icons ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+section .head .icons ul li a.home img {
+  padding-top: 3px;
+}
+
+section .head .icons ul li span {
+  padding-right: 30px;
+}
+
+section .head .icons ul li span.join1 {
+  padding-right: 20px;
+}
+
+section .head .icons ul li span.join2 {
+  padding-right: 5px;
+  color: #dd0330;
+  text-decoration: underline;
+}
+
+section .body {
+  margin-top: 30px;
+  border: 5px solid lightgray;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+section .body .title {
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section .body .title span {
+  color: rgb(255, 115, 0);
+  font-weight: bold;
+}
+
+section .body .subtitle {
+  margin: 20px;
+}
+
+section .body .subtitle p#bigTxt {
+  font-size: 24px;
+}
+
+section .body table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 95%;
+  border-top: 2px solid lightgray;
+  margin-bottom: 30px;
+}
+
+section .body table tr td {
+  border: 1px solid rgb(204, 204, 204);
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+}
+
+section .body table tr td.color {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+section .body table td {
+  font-size: 12px;
+}
+
+section .body table td input {
+  width: 300px;
+  height: 24px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid lightgray;
+}
+
+section .buttons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+section .buttons input {
+  margin-right: 10px;
+}
+
+section .buttons a button {
+  padding: 6px 10px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 1px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}

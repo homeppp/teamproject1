@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 50px;
+  padding: 50px;
+}
+
+section hr {
+  border-top: 1px solid rgb(245, 245, 245);
+}
+
+section .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+section .head .title {
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+section .head .title h3 {
+  font-size: 28px;
+  color: rgb(77, 74, 74);
+  padding-right: 12px;
+}
+
+section .head .title p {
+  font-size: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+}
+
+section .head .icons ul {
+  display: flex;
+  list-style: none;
+  padding-right: 12px;
+  padding-top: 10px;
+  color: rgb(117, 117, 117);
+  font-size: 13px;
+}
+
+section .head .icons ul li {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+section .head .icons ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+section .head .icons ul li a.home img {
+  padding-top: 3px;
+}
+
+section .head .icons ul li span {
+  padding-right: 30px;
+}
+
+section .head .icons ul li span.join1 {
+  padding-right: 20px;
+}
+
+section .head .icons ul li span.join2 {
+  padding-right: 5px;
+  color: #dd0330;
+  text-decoration: underline;
+}
+
+section .body {
+  margin-top: 30px;
+  padding: 30px 50px;
+  border: 5px solid lightgray;
+  margin-bottom: 20px;
+}
+
+section .body .wrapper {
+  display: flex;
+  border-bottom: 1px dotted lightgray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+section .body img {
+  margin-right: 20px;
+}
+
+section .body h4 {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+section .body p {
+  font-size: 12px;
+}
+
+section .body .icons {
+  text-align: center;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+section .body .icons a button {
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 0 1px;
+  cursor: pointer;
+}
+
+section .body .icons a button#redBtn {
+  background-color: #dd0330;
+  color: white;
+}
+
+section .body .icons a button#brownBtn {
+  background-color: brown;
+  color: white;
+}

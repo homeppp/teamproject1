@@ -7,6 +7,7 @@
     <title>회원가입 약관</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/membership3.css">
+    <script src="../js/membership3.js"></script>
 </head>
 <body>
     <section>
@@ -69,7 +70,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptatum numquam accusamus totam aliquam hic dolorum ex reprehenderit architecto a, enim eaque iste molestias quas, voluptatibus quasi, sapiente quo facilis?</p>
                 </div>
                 <div class="termsBtn">
-                    <input type="radio" name="noYes"></input><span>예, 위에 동의함</span>
+                    <input type="radio" name="noYes" id="check1"></input><span>예, 위에 동의함</span>
                     <input type="radio" name="noYes"></input><span>아니오, 위에 동의하지 않습니다.</span>
                     <p>※ 회원가입 약관에 동의 하지 않을 시, 회원 가입을 할 수 없습니다.</p>
                 </div>
@@ -88,18 +89,20 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui laudantium, repudiandae veniam quia libero deserunt ab quas cum praesentium quasi, molestias asperiores perferendis officia. Recusandae modi soluta porro nesciunt?</p>
                 </div>
                 <div class="termsBtn">
-                    <input type="radio" name="yesNo"></input><span>예, 위에 동의함</span>
+                    <input type="radio" name="yesNo" id="check2"></input><span>예, 위에 동의함</span>
                     <input type="radio" name="yesNo"></input><span>아니오, 위에 동의하지 않습니다.</span>
                     <p>※ 개인정보수집 이용자 동의사항에 동의 하지 않을시, 회원 가입을 할 수 없습니다.</p>
                 </div>
             </div>
             <div class="allAgree">
-                <input type="checkbox">
+                <input type="checkbox" id="agreeAll" onclick="agreeAll()">
                 <span>롯데자이언츠 회원약관 및 개인정보수집에 관한 동의, 취급방침에 모두 동의합니다.</span>
             </div>
         </div>
         <div class="confirm">
-            <input type="image" src="../images/btn_ok.gif">
+            <a href="membership4.html">
+                <input type="image" src="../images/btn_ok.gif">
+            </a>
             <a href="#"><button>취소</button></a>
         </div>
     </section>
