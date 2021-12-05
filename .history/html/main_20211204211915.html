@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+        });
+        $(".slider1").bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          moveSlides: 1,
+          minSlides: 5,
+          maxSlides: 5,
+          slideMargin: 10,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href=""><img src="../images/ico_login.png" /><span>로그인</span></a>
+        <a href=""><img src="../images/ico_join.png" /><span>회원가입</span></a>
+      </div>
+      <div>
+        <a href="">
+          <img src="../images/ico_ticket.png" /><span>장애인예매</span>
+        </a>
+        <a href="">
+          <img src="../images/ico_global.png" /><span>ENGLISH</span>
+        </a>
+        <a href=""><img src="../images/ico_top_search.gif" /></a>
+      </div>
+    </header>
+    <nav>
+      <div>
+        <a href=""><img src="../images/logo_header.png" /></a>
+      </div>
+      <div>
+        <a href=""><img src="../images/btn_all_menu.png" /></a>
+      </div>
+      <div>
+        <a href=""><h2>소개</h2></a>
+        <a href=""><h2>경기정보</h2></a>
+        <a href=""><h2>기록실</h2></a>
+        <a href=""><h2>선수단</h2></a>
+        <a href=""><h2>이벤트</h2></a>
+        <a href=""><h2>팬</h2></a>
+        <a href=""><h2>미디어</h2></a>
+      </div>
+    </nav>
+    <section>
+      <div class="slider">
+        <div><img src="../images/bg_main_visual_20211007.jpg" alt="" /></div>
+        <div><img src="../images/bg_main_visual_20211101.jpg" alt="" /></div>
+      </div>
+      <div>
+        <ul>
+          <a href="">
+            <li><img src="../images/img_bi(211108).jpg" /></li>
+          </a>
+          <a href=""><li><img src="../images/img_glove(211108).jpg"</li></a>
+          <a href=""><li><img src="../images/img_lotteon_210611.jpg"</li></a>
+          <a href=""><li><img src="../images/img_facebook.jpg"</li></a>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <a href="">
+            <li>
+              <img
+                src="../images/../images/211030-LG전-01-전준우 1500안타 시상식KCH23616.jpg"
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <img
+                src="../images/211029-LG전-01-친환경 야구장 만들기 챌린지KCH11888.jpg"
+              />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <img src="../images/211028-기아전-01-시구AW6I0101.jpg" />
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <img src="../images/img_youtube.jpg" />
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h3 id="fullUnderline">자이언츠 뉴스</h3>
+            <h3 id="lightFont">공지사항</h3>
+            <div>
+              <img
+                src="../images/11월 26일 안경교환권 전달식에 참석한 롯데자이언츠 박세웅 선수(왼쪽)와 전우현 비추미안경 대표.jpg"
+              />
+              <h4>롯데, 비추미안경과 안경교환권 지원</h4>
+              <p>
+                롯데, 비추미안경과 안경교환권 지원(박세웅 시즌 탈삼진과 연계,
+                275장 전달) 롯데자이언츠
+              </p>
+            </div>
+            <div>
+              <img src="../images/선수계약및트레이드관련.jpg" />
+              <h4>롯데, 투수 이동원·내야수 박승욱 영입</h4>
+              <p>
+                롯데, 투수 이동원·내야수 박승욱 영입 롯데자이언츠(대표이사
+                이석환)가 2022시즌 선수단 전력
+              </p>
+            </div>
+          </li>
+          <a href="">
+            <li>
+              <h4 id="centerLine">온라인샵</h4>
+              <p>
+                롯데자이언츠 공식 온라인 <br />쇼핑몰로 바로 안내해 드립니다.
+              </p>
+              <span id="box">바로가기 ></span>
+            </li>
+          </a>
+          <a href="">
+            <li>
+              <img src="../images/" />
+            </li>
+          </a>
+        </ul>
+      </div>
+      <aside>
+        <ul>
+          <li>
+            <img src="../images/ico_quick_01.png" alt="" /><span>경기일정</span>
+          </li>
+          <li>
+            <img src="../images/ico_quick_03.png" alt="" /><span
+              >스카이박스</span
+            >
+          </li>
+          <li>
+            <img src="../images/ico_quick_04.png" alt="" /><span>회원안내</span>
+          </li>
+          <li>
+            <img src="../images/ico_quick_07.png" alt="" /><span
+              >유료회원가입</span
+            >
+          </li>
+          <li>
+            <img src="../images/ico_quick_09.png" alt="" /><span
+              >패밀리회원가입</span
+            >
+          </li>
+          <li>
+            <img src="../images/ico_quick_08.png" alt="" /><span>온라인샵</span>
+          </li>
+          <li><span>TOP</span><img src="../images/ico_top.png" alt="" /></li>
+        </ul>
+      </aside>
+      <div class="slider1">
+        <div>
+          <a href="#"><img src="../images/flogo_01.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_02.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_04.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_05.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_06.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_07.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_09.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_12.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_13.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_14.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_15.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_16.jpg" /></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

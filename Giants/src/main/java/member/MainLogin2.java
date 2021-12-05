@@ -2,6 +2,8 @@ package member;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.servlet.RequestDispatcher;
@@ -14,8 +16,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/main/login2")
 public class MainLogin2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	       
-	protected void doPost(HttpServletRequest request, HttpServletResponse response, MemberInfo[] memberList) throws ServletException, IOException {
+		       
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		// 회원 정보 조회
 		String userId = request.getParameter("id");
 		String memberId = null;
@@ -23,11 +26,22 @@ public class MainLogin2 extends HttpServlet {
 		
 		
 		boolean exist = false;
-		for(MemberInfo member1 : memberList) {
-			exist = userId.equals(member1.getId());
+		Set<MemberInfo> memberList = InputMember.memberList;
+		if(memberList == null) {
+			memberList = new HashSet<>();
+			
+			MemberInfo memberInfo = new MemberInfo();
+			memberInfo.setId("id");
+			memberInfo.setPw("pw");
+			
+			memberList.add(memberInfo);
+		}
+		
+		for(MemberInfo member : memberList) {
+			exist = userId.equals(member.getId());
 			if(exist) {
-				memberId = member1.getId();
-				memberPw = member1.getPw();
+				memberId = member.getId();
+				memberPw = member.getPw();
 				break;
 			} // end if
 		} //end for

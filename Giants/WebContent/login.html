@@ -1,43 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-	<title>Login Page</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-	
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-	<div class="text-center" style="padding:50px 0">
-		<div class="logo">login</div>
-		<div class="login-form-wrapper">
-			<form id="login-form" class="text-left" action="main/login1" method="post">
-				<div class="login-form-main-message"></div>
-				<div class="main-login-form">
-					<div class="login-group">
-						<div class="form-group">
-							<input type="text" class="form-control" id="lg_username" name="id" placeholder="아이디">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" id="lg_password" name="pw" placeholder="비밀번호">
-						</div>
-						<div class="form-group login-group-checkbox">
-							<input type="checkbox" id="lg_remember" name="lg_remember">
-							<label for="lg_remember">로그인 상태 유지</label>
-						</div>
-					</div>
-					<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
-				</div>
-				<div class="etc-login-form">
-					<p>비밀번호를 잊어버리셨나요? <a href="#">비밀번호 찾기</a></p>
-					<p>처음 방문하셨나요? <a href="membership4.html">회원 가입</a></p>
-				</div>
-			</form>
-		</div>
-	</div>
+    <section>
+        <div class="head">
+            <div class="title">
+                <h3>로그인</h3>
+                <p>롯데자이언츠 로그인입니다.</p>
+            </div>
+            <div class="icons">
+                <ul>
+                    <li>
+                        <a href="#" class="home">
+                            <img src="images/loc_home.gif" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="top">
+                            <i class="fas fa-chevron-right"></i>
+                            <span>  멤버 </span>
+                            <img src="images/dept_001.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="top">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="join2"> 로그인</span>
+                            <img src="images/dept_001_on.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="body">
+            <div class="login">
+                <div class="welcome">
+                    <img src="images/login_form_bg.png" alt="">
+                    <div class="txt">
+                    <h4>회원님 반갑습니다~</h4>
+                    <p>로그인을 하시면 롯데자이언츠의 다양한 이벤트참여와 혜택을 누리실 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="idPw">
+                    <form action="main/login1" method="post">
+                        <ul>
+                            <li id="putId">
+                                <label for="userId"> <span>아이디</span> <input type="text" id="userId" name="id"></label>
+                            </li>
+                            <li id="putPw">
+                                <label for="userPw">비밀번호 <input type="password" id="userPw" name="pw"></label>
+                            </li>
+                        </ul>
+                        <input type="image" src="images/btn_login.gif">
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="findJoin">
+                <div class="find">
+                    <p>아이디나 비밀번호가 기억나지 않으세요?</p>
+                    <button>아이디/비밀번호 찾기</button>
+                </div>
+                <hr>
+                <div class="join">
+                    <p>아직 롯데자이언츠의 회원이 아니신가요?</p>
+                    <a href="membership4.html"><button>회원가입 신청</button></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 </body>
 </html>

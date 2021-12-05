@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  background-color: #05182f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header #frontIcons a {
+  padding: 12.5px 45px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+header #frontIcons a:first-child {
+  background-color: #1e3044;
+}
+
+header #frontIcons a img {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+header #backIcons a {
+  padding: 14px 45px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+header #backIcons a:first-child {
+  background-color: #1e3044;
+}
+
+header #backIcons a:last-child {
+  padding: 0;
+}
+
+header #backIcons a img {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+nav {
+  background-color: rgba(5, 24, 47, 0.8);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav #logo {
+  flex: 1;
+}
+
+nav #menu {
+  flex: 1;
+}
+
+nav #menuList {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+}
+
+nav #menuList a h2 {
+  font-size: 1.1em;
+}
+section .contents {
+  margin: 0 100px;
+  width: 100%;
+  display: flex;
+}
+
+section .contents .first_content {
+  width: 32%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+section .contents .first_content ul {
+  list-style: none;
+}
+
+section .contents .first_content ul a {
+  text-decoration: none;
+  color: black;
+}
+
+section .contents .first_content ul a li .image {
+  position: relative;
+}
+
+section .contents .first_content ul a li .image .txt {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+
+section .contents .first_content ul a li .image .txt h4 {
+  font-size: 1.5em;
+  border-bottom: 1px solid black;
+}
+
+section .contents .second_content {
+  width: 32%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+section .contents .second_content hr {
+  width: 300px;
+  margin: 0 auto;
+}
+
+section .contents .second_content .photoTitle {
+  position: relative;
+  padding: 20px;
+}
+
+section .contents .second_content .photoTitle h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+section .contents .second_content .photoTitle a {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid lightgray;
+}
+
+section .contents .second_content ul {
+  list-style: none;
+}
+
+section .contents .third_content {
+  width: 32%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+section .contents .third_content ul {
+  list-style: none;
+}

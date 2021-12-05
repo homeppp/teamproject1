@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+        });
+        $(".slider1").bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          moveSlides: 1,
+          minSlides: 5,
+          maxSlides: 5,
+          slideMargin: 10,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href=""><img src="../images/ico_login.png" /><span>로그인</span></a>
+        <a href=""><img src="../images/ico_join.png" /><span>회원가입</span></a>
+      </div>
+      <div>
+        <a href="">
+          <img src="../images/ico_ticket.png" /><span>장애인예매</span>
+        </a>
+        <a href="">
+          <img src="../images/ico_global.png" /><span>ENGLISH</span>
+        </a>
+        <a href=""><img src="../images/ico_top_search.gif" /></a>
+      </div>
+    </header>
+    <nav>
+      <div>
+        <a href=""><img src="../images/logo_header.png" /></a>
+      </div>
+      <div>
+        <a href=""><img src="../images/btn_all_menu.png" /></a>
+      </div>
+      <div>
+        <h2>소개</h2>
+        <h2>경기정보</h2>
+        <h2>기록실</h2>
+        <h2>선수단</h2>
+        <h2>이벤트</h2>
+        <h2>팬</h2>
+        <h2>미디어</h2>
+      </div>
+    </nav>
+    <section>
+      <div class="slider">
+        <div><img src="../images/bg_main_visual_20211007.jpg" alt="" /></div>
+        <div><img src="../images/bg_main_visual_20211101.jpg" alt="" /></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <aside>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </aside>
+      <div class="slider1">
+        <div>
+          <a href="#"><img src="../images/flogo_01.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_02.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_04.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_05.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_06.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_07.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_09.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_12.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_13.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_14.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_15.jpg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="../images/flogo_16.jpg" /></a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

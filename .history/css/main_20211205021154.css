@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  background-color: #05182f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header #frontIcons a {
+  padding: 12.5px 45px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+header #frontIcons a:first-child {
+  background-color: #1e3044;
+}
+
+header #frontIcons a img {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+header #backIcons a {
+  padding: 14px 45px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+header #backIcons a:first-child {
+  background-color: #1e3044;
+}
+
+header #backIcons a:last-child {
+  padding: 0;
+}
+
+header #backIcons a img {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+nav {
+  background-color: rgba(5, 24, 47, 0.8);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav #logo {
+  flex: 1;
+}
+
+nav #menu {
+  flex: 1;
+}
+
+nav #menuList {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+}
+
+nav #menuList a h2 {
+  font-size: 1.1em;
+}
+section .contents {
+  margin: 0 100px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+section .contents .first_content {
+  width: 400px;
+  height: 760px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+section .contents .first_content hr {
+  width: 40px;
+  margin: 0 auto;
+  color: black;
+}
+
+section .contents .first_content ul {
+  list-style: none;
+}
+
+section .contents .first_content ul a {
+  text-decoration: none;
+  color: black;
+}
+
+section .contents .first_content ul a li .image {
+  position: relative;
+}
+
+section .contents .first_content ul a li .image .txt {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+
+section .contents .first_content ul a li .image .txt h4 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+section .contents .first_content ul a li img {
+  margin-bottom: 15px;
+}
+
+section .contents .first_content ul a li img.lastchild {
+  margin-bottom: 0;
+}
+
+section .contents .second_content {
+  width: 400px;
+  height: 780px;
+  border: 1px solid black;
+  text-align: center;
+  margin-right: 15px;
+}
+
+section .contents .second_content hr {
+  width: 50px;
+  margin: 0 auto;
+  color: black;
+}
+
+section .contents .second_content ul .photoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .contents .second_content .photoTitle {
+  position: relative;
+  padding: 20px;
+}
+
+section .contents .second_content .photoTitle h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+section .contents .second_content .photoTitle a {
+  position: absolute;
+  right: -80px;
+  top: 10px;
+  border: 1px solid lightgray;
+}
+
+section .contents .second_content ul {
+  list-style: none;
+}
+
+section .contents .second_content ul a {
+  text-decoration: none;
+  color: white;
+}
+
+section .contents .second_content ul a li .image {
+  position: relative;
+}
+
+section .contents .second_content ul a li .image {
+  opacity: 0.8;
+}
+
+section .contents .second_content ul a li .image .txt {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+section .contents .third_content {
+  width: 400px;
+  height: 780px;
+  border: 1px solid black;
+}
+
+section .contents .third_content ul {
+  list-style: none;
+}
+
+section .contents .third_content ul.news {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section .contents .third_content ul.news .imgDate {
+  margin-right: 10px;
+}
+
+section .contents .third_content .newsTitle {
+  position: relative;
+}
+
+section .contents .third_content .newsTitle h3 {
+  display: inline-block;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  font-size: 1.4em;
+}
+
+section .contents .third_content .newsTitle img {
+  border: 1px solid lightgray;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+}
+
+section .contents .third_content .newsTitle h3#lightFont {
+  color: #666666;
+  font-weight: normal;
+}
+
+section .contents .third_content .newsTitle h3#fullUnderline {
+  border-bottom: 1px solid black;
+}
+
+section .contents .third_content ul.news li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+section .contents .third_content ul.news li a .imgDate {
+  text-align: center;
+}
+
+section .contents .third_content ul.news li a .imgDate span {
+  color: #797676;
+  font-size: 0.8em;
+}
+
+section .contents .third_content ul.news li a .imgTxt h4 {
+  color: #333333;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+section .contents .third_content ul.news li a .imgTxt p {
+  color: #424040;
+  font-size: 0.9em;
+}
+
+section .contents .third_content ul.news li a.secondNews {
+  margin-top: 10px;
+}
+
+section .contents .third_content ul a {
+  text-decoration: none;
+}
+
+section .contents .third_content ul a .imgContainer {
+  position: relative;
+  text-align: center;
+}
+
+section .contents .third_content ul a .imgContainer .titleContainer {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  color: white;
+  font-size: 1.5em;
+  border-bottom: 1px solid white;
+}
+
+section .contents .third_content ul a .imgContainer .txtContainer {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: left;
+}
+
+section .contents .third_content ul a .imgContainer .linkContainer {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  color: white;
+  font-size: 0.8em;
+  border: 1px solid white;
+}
