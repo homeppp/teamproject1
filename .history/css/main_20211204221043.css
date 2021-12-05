@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #05182f;
+  display: flex;
+  justify-content: space-around;
+}
+
+header #frontIcons a:first-child {
+  background-color: #1e3044;
+  padding: 20px;
+}

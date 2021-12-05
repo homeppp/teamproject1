@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/input/member")
 public class InputMember extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
 	public static Set<MemberInfo> memberList;
 	
 	@Override
@@ -77,6 +78,9 @@ public class InputMember extends HttpServlet {
 				
 		Calendar cal = Calendar.getInstance();
 		int nowyear = cal.get(cal.YEAR); // 현재 년도 구하기
+		int yy = Integer.parseInt(year);
+		int mm = Integer.parseInt(month);
+		int dd = Integer.parseInt(day);
 
 		// 각 정보의 길이 확인
 		if (id.length() < 4 && id.length() > 20 && pw.length() < 8 && pw.length() > 15 && pw2.length() < 8 && pw2.length() > 15 ) {
@@ -87,9 +91,38 @@ public class InputMember extends HttpServlet {
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 			out.print("전화번호 길이를 확인하세요.");
 			return ;
-		} else if(Integer.parseInt(year)> nowyear || Integer.parseInt(month) > 12 || Integer.parseInt(day)>31) {
+		} else if(yy > nowyear){
+			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+			out.print("태어난 년도를 다시 확인하세요~");
+			return;
+		} else if(mm > 12 ||(mm==1 && dd >31) || (mm==2 && dd>29) ||(mm==3 && dd>31)|| (mm==4 && dd>30)|| (mm==5 && dd>31)||(mm==6 && dd>30)|| (mm==7 && dd>31)|| (mm==8 && dd>31)|| (mm==9 && dd>30) ||(mm==10 && dd > 31)||(mm==11 && dd>30)|| (mm==12 && dd>31)) {
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 			out.print("생년월일을 다시 확인하세요~");
+			return;
+		}
+		String[] specialChar = {"!", "@", "?", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", "=", "|", "\\", "~", "<", ">", ",", "."};
+		boolean isSpecial = false;
+		for( int i=0; i < specialChar.length;i++) {
+			isSpecial = pw.indexOf(specialChar[i]) > -1;
+			if(isSpecial) break;
+		}
+
+		String[] alpha ={"a", "b", "c", "d", "f", "e","f","g","h","i","j","k", "l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A", "B","C", "D", "E", "F", "G", "H", "I", "J","K","L","M","N","O","P", "Q", "R","S", "T", "U","V", "W", "X", "Y", "Z"};
+		boolean isAlpha = false;
+		for( int i = 0; i<alpha.length; i++) {
+			isAlpha = pw.indexOf(alpha[i]) >-1;
+			if(isAlpha) break;
+		}
+		String[] num = {"0","1","2","3", "4","5", "6","7","8","9"};
+		boolean isNum = false;
+		for(int i = 0; i<num.length; i++) {
+			isNum = pw.indexOf(num[i]) > -1;
+			if(isNum) break;
+		}
+
+		if(!isSpecial || !isAlpha || !isNum) {
+			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+			out.print("비밀번호에 특수 문자, 숫자, 문자를 포함하세요.");
 			return;
 		}
 		
@@ -125,7 +158,7 @@ public class InputMember extends HttpServlet {
 			}
 		}
 		
-		boolean exist1 =	memberList.add(member);
+		boolean exist1 = memberList.add(member);
 		System.out.println(member.getId()+ "\t" + member.getPw());
 		
 		if(exist1) {
