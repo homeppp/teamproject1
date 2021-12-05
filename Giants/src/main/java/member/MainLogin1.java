@@ -17,16 +17,16 @@ public class MainLogin1 extends HttpServlet {
        
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 파라미터 확인
-		String userId = request.getParameter("id");
-		String userPw = request.getParameter("pw");
+		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
 				
-		if(userId != null && userPw != null) {
+		if(id != null && pw != null) {
 			// 문자열 앞 뒤 공백 제거
-			userId = userId.trim();
-			userPw = userPw.trim();
+			id = id.trim();
+			pw = pw.trim();
 		}
 				
-		if(userId == null || userPw == null || userId.isEmpty() || userPw.isEmpty()) {
+		if(id == null || pw == null || id.isEmpty() || pw.isEmpty()) {
 			// 로그인에 필요한 파라미터를 전달 받지 못했다면 SC_BAD_REQUEST 응답
 			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
 					
